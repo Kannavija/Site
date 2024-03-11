@@ -1,0 +1,7 @@
+.myFooter {
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  border: 2px solid;
+  background-color: #fff;
+}
