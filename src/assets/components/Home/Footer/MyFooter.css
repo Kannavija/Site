@@ -1,7 +1,21 @@
 .myFooter {
-  /* position: fixed; */
+  display: flex;
+  /*  position: fixed; */
   bottom: 0;
   width: 100%;
-  border: 2px solid;
+  border-top: 2px solid;
   background-color: #fff;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12px;
+  color: grey;
+}
+
+.first {
+  color: black;
+  font-weight: 900;
 }

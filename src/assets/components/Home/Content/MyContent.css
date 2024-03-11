@@ -9,7 +9,6 @@
   width: 45%;
   height: 500px;
   display: flex;
-  /* margin-left: 25%; */
   border-radius: 20px;
   object-fit: cover;
 }
@@ -18,9 +17,9 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 .patisserie {
-  flex: 0 0 calc(50% - 20px); /* Pour diviser en deux colonnes */
-  margin: 10px; /* Marge entre les éléments */
-  text-align: center; /* Centrage du contenu */
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
+  text-align: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -34,6 +33,50 @@
 
 .patisserie {
   flex: 0 0 calc(25% - 20px); /* Pour diviser en quatre colonnes */
-  margin: 10px; /* Marge entre les éléments */
-  text-align: center; /* Centrage du contenu */
+  margin: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 548px) {
+  .vitrine img {
+    margin-top: 3em;
+    width: 50%;
+    height: 150px;
+  }
+  .patisserie img {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .patisserie {
+    flex: 0 0 calc(50% - 20px); /* Pour diviser en quatre colonnes */
+    margin: 10px; /* Marge entre les éléments */
+    text-align: center; /* Centrage du contenu */
+  }
+}
+
+@media screen and (min-width: 548px) {
+  .vitrine img {
+    margin-top: 3em;
+    width: 50%;
+    height: 250px;
+  }
+  .patisserie img {
+    width: 100%;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .vitrine img {
+    margin-top: 3em;
+    width: 50%;
+    height: 500px;
+  }
+  .patisserie img {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+  }
 }
