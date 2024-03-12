@@ -1,7 +1,14 @@
 .product-container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10%;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.laUne {
+  text-align: left;
+  text-transform: capitalize;
+  margin: 0 0 0 10px;
 }
 
 .vitrine img {
@@ -9,19 +16,25 @@
   width: 45%;
   height: 500px;
   display: flex;
-  border-radius: 20px;
+  border-radius: 10px;
   object-fit: cover;
 }
+
 .vitrine {
-  background-color: antiquewhite;
+  background-color: rgb(166 161 161 / 75%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
+
 .patisserie {
   flex: 0 0 calc(50% - 20px);
   margin: 10px;
   text-align: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  flex: 0 0 calc(25% - 20px); /* Pour diviser en quatre colonnes */
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
 }
 
 .patisserie img {
@@ -31,10 +44,8 @@
   object-fit: cover;
 }
 
-.patisserie {
-  flex: 0 0 calc(25% - 20px); /* Pour diviser en quatre colonnes */
-  margin: 10px;
-  text-align: center;
+.adresse {
+  margin: 0;
 }
 
 @media screen and (max-width: 548px) {
@@ -59,7 +70,7 @@
   .vitrine img {
     margin-top: 3em;
     width: 50%;
-    height: 250px;
+    height: 20em;
   }
   .patisserie img {
     width: 100%;
@@ -67,7 +78,7 @@
   }
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 1020px) {
   .vitrine img {
     margin-top: 3em;
     width: 50%;

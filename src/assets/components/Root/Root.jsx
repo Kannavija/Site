@@ -18,7 +18,7 @@ function Root() {
 
         <div className="onglet">
           <input type="text" placeholder="Search here" />
-          <NavLink to="">Produit</NavLink>
+          <NavLink to="/Produit">Produit</NavLink>
           <NavLink to="/Compte">Mon compte</NavLink>
           <NavLink to="">Mon Panier</NavLink>
         </div>

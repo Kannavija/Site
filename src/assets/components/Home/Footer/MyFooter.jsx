@@ -10,7 +10,7 @@ function MyFooter() {
         </div>
         <div className="condition">
           <h2 className="first">Nos conditions</h2>
-          <h2>Metions Legales</h2>
+          <h2>Mentions Legales</h2>
           <h2>Données personelles</h2>
         </div>
         <div>
